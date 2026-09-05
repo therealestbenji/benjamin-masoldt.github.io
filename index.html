@@ -1,6 +1,16 @@
-
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin Masoldt – DevOps Engineer & CI/CD Automation</title>
+</head>
+<body>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@300;400;600;700&display=swap');
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url('fonts/jetbrains-mono-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:100 800;font-display:swap;src:url('fonts/jetbrains-mono-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Sora';font-style:normal;font-weight:100 800;font-display:swap;src:url('fonts/sora-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Sora';font-style:normal;font-weight:100 800;font-display:swap;src:url('fonts/sora-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 *{margin:0;padding:0;box-sizing:border-box}
 :root{--bg:#0a0c0f;--bg2:#111418;--bg3:#1a1e24;--accent:#22c55e;--accent2:#16a34a;--text:#e2e8f0;--muted:#64748b;--border:#1e2530;--white:#f8fafc}
 body{background:var(--bg);color:var(--text);font-family:'Sora',sans-serif;font-size:15px;line-height:1.6}
@@ -63,6 +73,8 @@ section{padding:5rem 2rem;max-width:900px;margin:0 auto}
 .cert-name{font-size:13px;color:var(--white);font-weight:500}
 .cert-issuer{font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace}
 footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;font-family:'JetBrains Mono',monospace;border-top:1px solid var(--border)}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--border);transition:color .2s,border-color .2s}
+footer a:hover{color:var(--accent);border-color:var(--accent)}
 </style>
 
 <nav>
@@ -76,16 +88,16 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;f
 </nav>
 
 <div class="hero" style="padding-left:2rem;padding-right:2rem">
-  <div class="tag">Verfügbar am Abend und an Wochenenden · 75 €/Std · Remote</div>
+  <div class="tag">Verfügbar am Abend und an Wochenenden · 50 €/Std · Remote</div>
   <br><br>
   <p class="hero-pre">Benjamin Masoldt</p>
   <h1>Software Developer<br><span>CI/CD & Python</span><br>Automation</h1>
   <p class="hero-sub">Ich automatisiere manuelle Prozesse für KMUs von der Build-Pipeline bis zur automatischen Auslieferung. Professionelle Erfahrung aus Siemens Energy.</p>
   <a class="btn btn-primary" href="#contact">Projekt anfragen</a>
-  <a class="btn btn-outline" href="https://www.freelancermap.com/profile/junior-software-developer-python-java-c-3-year-experience" target="_blank">Freelancermap →</a>
+  <a class="btn btn-outline" href="https://www.freelancermap.com/profile/junior-software-developer-python-java-c-3-year-experience" target="_blank" rel="noopener">Freelancermap →</a>
   <div class="stat-row">
     <div><span class="stat-val">3+</span><span class="stat-lbl">Jahre Erfahrung</span></div>
-    <div><span class="stat-val">75€</span><span class="stat-lbl">Stundensatz</span></div>
+    <div><span class="stat-val">50€</span><span class="stat-lbl">Stundensatz</span></div>
     <div><span class="stat-val">ITIL</span><span class="stat-lbl">Zertifiziert 2024</span></div>
   </div>
 </div>
@@ -98,13 +110,13 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;f
   <div class="about-grid">
     <div class="about-text">
       <p>Meine Begeisterung für die IT begann damals in der Hauptschule, als mir mein damaliger Lehrer eine 8x8 LED Matrix gab,
-        die ich mit einem Arduino ansteuern konnte. Es war faszinierend, wie ich durch einfachen Tutorials Muster und Bewegungsabläufe auf 
+        die ich mit einem Arduino ansteuern konnte. Es war faszinierend, wie ich durch einfache Tutorials Muster und Bewegungsabläufe auf
         einer kleinen Anzeigetafel erschaffen konnte. <br> <br>
-        Das hat meine Neugier geweckt und somikt habe ich erst meine mittlere Reife abgeschlossen und danach ein Berufskolleg
-        besucht und wurde dort zum "staatlichen geprüften Assistenten für Informations- und Kommunikationstechnik" ausgebildet, mit abgeschlossener
+        Das hat meine Neugier geweckt und somit habe ich zuerst meine mittlere Reife abgeschlossen und danach ein Berufskolleg
+        besucht und wurde dort zum "staatlich geprüften Assistenten für Informations- und Kommunikationstechnik" ausgebildet, mit abgeschlossener
         Fachhochschulreife. <br> <br>
-        Anschließend habe ich eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei Siemens Energy gemacht, wo ich seitdem als Software Developer tätig bin. 
-        Dort habe ich umfangreiche Erfahrung in der Automatisierung von Build- und Deployment-Prozessen gesammelt, insbesondere mit Jenkins und GitLab CI/CD
+        Anschließend habe ich eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung bei Siemens Energy gemacht, wo ich seitdem als Software Developer tätig bin.
+        Dort habe ich umfangreiche Erfahrung in der Automatisierung von Build- und Deployment-Prozessen gesammelt, insbesondere mit Jenkins und GitLab CI/CD.
       </p>
     </div>
     <div>
@@ -114,7 +126,7 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;f
         <div class="about-item">Abschluss: Staatlich geprüfter Assistent für Informations- und Kommunikationstechnik</div>
         <div class="about-item">Fachinformatiker Anwendungsentwicklung</div>
         <div class="about-item">Siemens Energy – Berufserfahrung</div>
-        <div class="about-item">Verfügbar am Abend und an Wochenenden  verfügbar, flexibel nach Absprache</div>
+        <div class="about-item">Am Abend und an Wochenenden verfügbar, flexibel nach Absprache</div>
         <div class="about-item">Deutsch (Muttersprache) · Englisch (gut) · Russisch (Grundkenntnisse)</div>
         <div class="cert-row">
           <div class="cert-icon">✦</div>
@@ -184,7 +196,7 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;f
       <div class="project-num">01</div>
       <div>
         <div class="project-title">Kiritos Sword</div>
-        <div class="project-desc">Ein Minecraft Mod, der ein neues Schwert mit neuem craftig recipe hinzufügt.</div>
+        <div class="project-desc">Ein Minecraft-Mod, der ein neues Schwert mit eigenem Crafting-Rezept hinzufügt.</div>
         <div class="badge-row">
           <span class="badge">Java</span><span class="badge">Minecraft Modding</span><span class="badge">Maven</span>
         </div>
@@ -222,13 +234,13 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;f
     <h3>Projekt in Planung?</h3>
     <p>Ich bin aktuell für neue Aufträge verfügbar. Schreib mir einfach. </p>
     <div class="contact-links">
-      <a class="contact-link" href="mailto:beni.masoldt@gmx.de">
-        <span>✉</span> <span>E-Mail schreiben</span>
+      <a class="contact-link" href="mailto:benjamin@masoldt.de">
+        <span>✉</span> <span>benjamin@masoldt.de</span>
       </a>
-      <a class="contact-link" href="https://www.freelancermap.com/profile/junior-software-developer-python-java-c-3-year-experience" target="_blank">
+      <a class="contact-link" href="https://www.freelancermap.com/profile/junior-software-developer-python-java-c-3-year-experience" target="_blank" rel="noopener">
         <span>◈</span> <span>Freelancermap</span>
       </a>
-      <a class="contact-link" href="https://github.com/WolfofAstora" target="_blank">
+      <a class="contact-link" href="https://github.com/WolfofAstora" target="_blank" rel="noopener">
         <span>⌥</span> <span>GitHub</span>
       </a>
     </div>
@@ -236,5 +248,8 @@ footer{text-align:center;padding:2.5rem 2rem;color:var(--muted);font-size:12px;f
 </section>
 
 <footer>
-  <span class="mono">Benjamin Masoldt · Bayern, Deutschland · 2026</span>
+  <span class="mono">Benjamin Masoldt · Bayern, Deutschland · 2026</span><br>
+  <span class="mono"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></span>
 </footer>
+</body>
+</html>
